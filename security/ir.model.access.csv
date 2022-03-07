@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_order_material,order_material.order_material,model_order_material,order_material.group_order_material,1,1,1,1
+access_order_material_detail,order_material.order_material_detail,model_order_material_detail,order_material.group_order_material,1,1,1,1
+access_message,order_material.message,model_material_message_wizard,order_material.group_order_material,1,1,1,1

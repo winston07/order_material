@@ -1,0 +1,37 @@
+<templates>
+    <div t-name="order_material.qtyStock">
+        <div t-att-class="!widget.data.display_qty_widget ? 'invisible' : ''">
+            <a tabindex="0"
+               t-attf-class="fa fa-area-chart {{ widget.data.action=='purchase_order' ? 'text-danger' : 'text-primary' }}"/>
+        </div>
+    </div>
+
+    <div t-name="order_material.QtyDetailPopOver">
+        <table class="table table-borderless table-sm">
+            <tbody>
+                <tr>
+                    <td>
+                        <strong>Available</strong>
+                        <br/>
+                        <small>All planned operations included</small>
+                    </td>
+                    <td>
+                        <b t-esc='data.available_qty' t-att-class="data.action=='purchase_order' ? 'text-danger': 'text-success'"/>
+                        <t t-esc='data.uom_id.data.display_name'/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <strong>Reserved</strong>
+                        <br/>
+                    </td>
+                    <td style="min-width: 50px; text-align: right;">
+                        <b t-esc='data.reserved_qty'/>
+                        <t t-esc='data.uom_id.data.display_name'/>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</templates>

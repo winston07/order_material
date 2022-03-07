@@ -1,0 +1,113 @@
+<odoo>
+    <data>
+        <record id="order_material_form_view" model="ir.ui.view">
+            <field name="name">order.material.form</field>
+            <field name="model">order.material</field>
+            <field name="arch" type="xml">
+                <form string="Order Material">
+                    <header>
+                        <button name="action_confirm" string="Confirm" type="object" states="draft"
+                                class="oe_highlight"/>
+                        <button name="action_cancel" string="Cancel" type="object" states="done"
+                                class="oe_highlight"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="action_view_purchase" type="object" icon="fa-pencil-square-o"
+                                    class="oe_stat_button" attrs="{'invisible': [('purchase_order_count', '=', 0)]}">
+                                <field name="purchase_order_count" widget="statinfo"/>
+                            </button>
+                            <button name="action_view_picking" type="object" class="oe_stat_button" icon="fa-truck"
+                                    attrs="{'invisible': [('internal_picking_count', '=', 0)]}">
+                                <field name="internal_picking_count" widget="statinfo"/>
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="name" placeholder="Name" nolabel="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id" attrs="{'readonly': [('state', 'not in', ('draft'))]}"
+                                       force_save="1"/>
+                            </group>
+                            <group>
+                                <field name="application_date" force_save="1"
+                                       attrs="{'readonly': [('state', 'not in', ('draft'))]}"/>
+                                <field name="order_date" force_save="1" readonly="1"/>
+                                <field name="company_id" attrs="{'readonly': [('state', 'not in', ('draft'))]}"
+                                       force_save="1"/>
+                            </group>
+                        </group>
+
+                        <notebook>
+                            <page string="Lines">
+                                <field name="lines_ids" widget="section_and_note_one2many" mode="tree"
+                                       attrs="{'readonly': [('state', 'in', ('done','cancel'))]}">
+                                    <tree string="Lines" editable="bottom">
+                                        <field name="product_id"
+                                               options="{'no_create': True, 'no_create_edit':True,'no_edit': 1}"
+                                               attrs="{'readonly': [('parent.state', 'not in', ('draft'))]}"
+                                               force_save="1"/>
+                                        <field name="description" invisible="1"/>
+                                        <field name="uom_id"
+                                               options="{'no_create': True, 'no_create_edit':True,'no_edit': 1}"/>
+                                        <field name="qty"/>
+                                        <field name="display_qty_widget" invisible="1"/>
+                                        <widget name="qty_stock_widget" width="20px"/>
+                                        <field name="available_qty" invisible="1"/>
+                                        <field name="reserved_qty" invisible="1"/>
+                                        <field name="action" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="mrp_despiece_tree_view" model="ir.ui.view">
+            <field name="name">order.material.tree</field>
+            <field name="model">order.material</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="employee_id"/>
+                    <field name="application_date"/>
+                    <field name="company_id"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="order_material">
+            <field name="name">Order Material</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">order.material</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create Order Material
+                </p>
+                <p>
+                    Generated from order material
+                </p>
+            </field>
+        </record>
+        <template id="order_material_line_view_list" name="order.material.line.view.list"
+                  inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/order_material/static/src/js/qty_widget.js"></script>
+            </xpath>
+        </template>
+        <menuitem id="menu_order_material"
+                  name="Order Material"
+                  parent="stock.menu_stock_warehouse_mgmt"
+                  action="order_material"
+                  sequence="100"/>
+    </data>
+</odoo>

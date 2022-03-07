@@ -1,0 +1,364 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* order_material
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-07 02:54+0000\n"
+"PO-Revision-Date: 2022-03-07 02:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: order_material
+#: model:ir.actions.report,print_report_name:order_material.report_id
+msgid "(object.name)"
+msgstr ""
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_report_id
+msgid "<strong>Action</strong>"
+msgstr "<strong>Acción</strong>"
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_report_id
+msgid "<strong>Date:</strong>"
+msgstr "<strong>Fecha:</strong>"
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_report_id
+msgid "<strong>Employee:</strong>"
+msgstr ""
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_report_id
+msgid "<strong>Order Material</strong>"
+msgstr "<strong>Pedido Material</strong>"
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_report_id
+msgid "<strong>Product</strong>"
+msgstr "<strong>Producto</strong>"
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_report_id
+msgid "<strong>Quantity</strong>"
+msgstr "<strong>Cantidad</strong>"
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_report_id
+msgid "<strong>State</strong>"
+msgstr "<strong>Estado</strong>"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__action
+msgid "Action"
+msgstr "Acción"
+
+#. module: order_material
+#. openerp-web
+#: code:addons/order_material/static/src/xml/stock.xml:0
+#, python-format
+msgid "All planned operations included"
+msgstr "Todas las operaciones previstas incluyen"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material__application_date
+msgid "Application Date"
+msgstr "Fecha de solicitud"
+
+#. module: order_material
+#. openerp-web
+#: code:addons/order_material/static/src/js/qty_widget.js:0
+#, python-format
+msgid "Availability"
+msgstr "Disponibilidad"
+
+#. module: order_material
+#. openerp-web
+#: code:addons/order_material/static/src/xml/stock.xml:0
+#, python-format
+msgid "Available"
+msgstr "Disponible"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__available_qty
+msgid "Available Quantity"
+msgstr "Cantidad Disponible"
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.material_message_wizard
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_form_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: order_material
+#: model:ir.model.fields.selection,name:order_material.selection__order_material__state__cancel
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: order_material
+#: code:addons/order_material/models/order_material.py:0
+#, python-format
+msgid "Cannot be deleted in done state"
+msgstr "No puede ser borrado en el estado hecho"
+
+#. module: order_material
+#: code:addons/order_material/models/order_material.py:0
+#, python-format
+msgid "Cannot cancel the order, stock picking has already been validated."
+msgstr "No se puede cancelar la OM, el stock picking ya ha sido validado"
+
+#. module: order_material
+#: model:ir.model,name:order_material.model_res_company
+msgid "Companies"
+msgstr "Compañias"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material__company_id
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.material_message_wizard
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_form_view
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: order_material
+#: model_terms:ir.actions.act_window,help:order_material.order_material
+msgid "Create Order Material"
+msgstr "Crear material de pedido"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_material_message_wizard__create_uid
+#: model:ir.model.fields,field_description:order_material.field_order_material__create_uid
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_material_message_wizard__create_date
+#: model:ir.model.fields,field_description:order_material.field_order_material__create_date
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material__lines_ids
+msgid "Detail"
+msgstr "Detalle"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_material_message_wizard__display_name
+#: model:ir.model.fields,field_description:order_material.field_order_material__display_name
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__display_name
+#: model:ir.model.fields,field_description:order_material.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:order_material.field_res_company__display_name
+#: model:ir.model.fields,field_description:order_material.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "Nombre a Mostrar"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__display_qty_widget
+msgid "Display Qty Widget"
+msgstr "Mostrar Widget de Cantidades"
+
+#. module: order_material
+#: model:ir.model.fields.selection,name:order_material.selection__order_material__state__done
+msgid "Done"
+msgstr "Realizado"
+
+#. module: order_material
+#: model:ir.model.fields.selection,name:order_material.selection__order_material__state__draft
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: order_material
+#: model_terms:ir.actions.act_window,help:order_material.order_material
+msgid "Generated from order material"
+msgstr "Generado a partir del material del pedido"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_material_message_wizard__id
+#: model:ir.model.fields,field_description:order_material.field_order_material__id
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__id
+#: model:ir.model.fields,field_description:order_material.field_purchase_order__id
+#: model:ir.model.fields,field_description:order_material.field_res_company__id
+#: model:ir.model.fields,field_description:order_material.field_stock_picking__id
+msgid "ID"
+msgstr ""
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material__internal_picking_count
+#: model:ir.model.fields.selection,name:order_material.selection__order_material_detail__action__internal_picking
+msgid "Internal Picking"
+msgstr "Pedido Interno"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_material_message_wizard____last_update
+#: model:ir.model.fields,field_description:order_material.field_order_material____last_update
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail____last_update
+#: model:ir.model.fields,field_description:order_material.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:order_material.field_res_company____last_update
+#: model:ir.model.fields,field_description:order_material.field_stock_picking____last_update
+msgid "Last Modified on"
+msgstr "Ultima Modificación en"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_material_message_wizard__write_uid
+#: model:ir.model.fields,field_description:order_material.field_order_material__write_uid
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_material_message_wizard__write_date
+#: model:ir.model.fields,field_description:order_material.field_order_material__write_date
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_form_view
+msgid "Lines"
+msgstr "Lineas"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_material_message_wizard__name
+#: model_terms:ir.ui.view,arch_db:order_material.material_message_wizard
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material__name
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_form_view
+msgid "Name"
+msgstr "Nombre"
+
+#. module: order_material
+#: model:ir.model.constraint,message:order_material.constraint_order_material_name_uniq
+msgid "Name must be unique per Company!"
+msgstr "El nombre debe ser único por empresa"
+
+#. module: order_material
+#: code:addons/order_material/models/order_material.py:0
+#: code:addons/order_material/models/order_material.py:0
+#, python-format
+msgid "New"
+msgstr "Nuevo"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material__order_date
+msgid "Order Date"
+msgstr "Fecha Pedido"
+
+#. module: order_material
+#: model:ir.actions.act_window,name:order_material.order_material
+#: model:ir.actions.report,name:order_material.report_id
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__order_material_id
+#: model:ir.model.fields,field_description:order_material.field_purchase_order__order_material_po_id
+#: model:ir.model.fields,field_description:order_material.field_stock_picking__order_material_picking_id
+#: model:ir.module.category,name:order_material.module_category_order_material
+#: model:ir.ui.menu,name:order_material.menu_order_material
+#: model_terms:ir.ui.view,arch_db:order_material.order_material_form_view
+msgid "Order Material"
+msgstr "Pedido de Materiales"
+
+#. module: order_material
+#: model:res.groups,name:order_material.group_order_material
+msgid "Order Material Manager"
+msgstr "Pedido de Materiales Admin"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__product_id
+msgid "Product"
+msgstr "Producto"
+
+#. module: order_material
+#: model:ir.model,name:order_material.model_purchase_order
+#: model:ir.model.fields,field_description:order_material.field_order_material__purchase_order_count
+#: model:ir.model.fields.selection,name:order_material.selection__order_material_detail__action__purchase_order
+msgid "Purchase Order"
+msgstr "Orden de Compra"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__qty
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: order_material
+#. openerp-web
+#: code:addons/order_material/static/src/xml/stock.xml:0
+#, python-format
+msgid "Reserved"
+msgstr ""
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__reserved_qty
+msgid "Reserved Quantity"
+msgstr "Cantidad Reservada"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material__state
+msgid "State"
+msgstr "Estado"
+
+#. module: order_material
+#: code:addons/order_material/models/order_material.py:0
+#, python-format
+msgid "Stop"
+msgstr "Alerta"
+
+#. module: order_material
+#: code:addons/order_material/models/order_material.py:0
+#, python-format
+msgid ""
+"The Order for materials contains products without sufficient stock, so a "
+"Request for Quotation to be confirmed / validated will be automatically "
+"generated."
+msgstr ""
+"El Pedido de materiales contiene productos sin stock suficiente, "
+"por lo que se Generará automáticamente una Solicitud de presupuesto por confirmar / validar."
+
+
+#. module: order_material
+#: model:ir.model,name:order_material.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: order_material
+#: model:ir.model.fields,field_description:order_material.field_order_material_detail__uom_id
+msgid "Unit Of Measure"
+msgstr "Unidad de Medida"
+
+#. module: order_material
+#: model:ir.model,name:order_material.model_material_message_wizard
+msgid "material.message.wizard"
+msgstr ""
+
+#. module: order_material
+#: model:ir.model,name:order_material.model_order_material
+msgid "order.material"
+msgstr ""
+
+#. module: order_material
+#: model:ir.model,name:order_material.model_order_material_detail
+msgid "order.material.detail"
+msgstr ""
