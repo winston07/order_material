@@ -55,8 +55,6 @@ odoo.define('order_material.QtyWidget', function (require) {
 
 
         _getContent() {
-            console.log('this.data', this.data)
-            console.log('this.fields', this.fields)
             if (this.data['product_id'] == false) {
                 return
             } else {
